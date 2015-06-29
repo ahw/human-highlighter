@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>highlighter</title>
+    <meta name="description" content="I like sandwiches.">
+    <style>
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+      font-family:Monospace;
+      /* text-shadow: 1px 0px 0px black; */
+      line-height:1.5em;
+    }
+
+    @media (min-width: 600px) {
+        body {
+            margin:auto;
+        }
+
+        p {
+            width:40%;
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            -webkit-transform:translate(-50%, -50%);
+        }
+    }
+
+    p {
+        padding:10px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <p>Upset by two nostalgias facing each other like two mirrors, he lost
+    his <span class="hh">marvelous</span> sense of unreality and he ended up recommending to all of
+    them that they <span class="hh">leave Macondo,</span> that they forget
+    everything he had taught them about the world and the human heart, that
+    they shit on Horace, and that wherever they might be they always
+    remember that <span class="hh">the past was a lie, that memory has no
+    return, that every spring gone by could never be recovered, and that the
+    wildest and most tenacious love was an ephemeral truth in the
+    end.</span></p>
+
+    <!--
+        Use the browser global version. If bundling with Browserify you can
+        simply do
+
+            var hh = require('human-highlight');
+            hh.highlight();
+
+        Note the dist/human-highlighter.browser-global.js script is simply
+        the compiled form of
+
+            window.HumanHighlighter = require('human-highlighter');
+    -->
+
+    <script type="text/javascript" src="dist/human-highlighter.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    var highlighter = new HumanHighlighter({
+        // colors: ['yellow', '#F7F233', '#F7F243', '#FDE821'],
+        // highlightClassName: 'hh',
+        // negJitterX: -1,
+        // posJitterX: 0.75,
+        // negJitterY: -0.25,
+        // posJitterY: 0.25,
+        // adjacentSideLength: 1
+    });
+
+    highlighter.highlight();
+    </script>
+
+</body>
+</html>

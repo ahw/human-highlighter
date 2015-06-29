@@ -1,0 +1,34 @@
+{
+  "name": "human-highlighter",
+  "version": "1.0.0",
+  "description": "Highlights things with crooked strokes.",
+  "main": "src/human-highlighter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ahw/human-highlighter"
+  },
+  "keywords": [
+    "human",
+    "highlight"
+  ],
+  "author": "ahw <andrewhallagan@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^10.2.3",
+    "gulp": "^3.8.11",
+    "gulp-clean": "^0.3.1",
+    "gulp-jshint": "^1.11.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sizereport": "^1.1.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.5",
+    "gulp-watch": "^4.2.4",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.1"
+  }
+}
