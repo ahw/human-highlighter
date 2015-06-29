@@ -30,7 +30,7 @@ end.</span></p>
 Put the **human-highlighter** code on your page. You can `require`
 **human-highlighter.js** if you're using Browserify, or you can just depend
 on having HumanHighlighter as a browser global by putting
-**dist/human-highlighter.browser-global.js** on the page.  Either way, using the
+**dist/human-highlighter.min.js** on the page. Either way, using the
 following code to highlight everything in `<span class="hh">` tags.
 
 ```javascript
