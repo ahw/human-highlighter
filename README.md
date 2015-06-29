@@ -1,6 +1,6 @@
 ![VimHooks](https://s3.amazonaws.com/pd93f014/human-highlighter.png?v=1)
 
-Demo: https://ahw.github.io/human-highlighter
+Demo: [https://ahw.github.io/human-highlighter](https://ahw.github.io/human-highlighter)
 
 This bit of code takes a chunk of text and draws randomized highlighter
 lines over each line on the page. It's not as simple as just wrapping text
